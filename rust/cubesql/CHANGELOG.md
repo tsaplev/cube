@@ -3,6 +3,85 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.35.45](https://github.com/cube-js/cube.js/compare/v0.35.44...v0.35.45) (2024-06-05)
+
+
+### Bug Fixes
+
+* **cubesql:** Don't duplicate time dimensions ([577220d](https://github.com/cube-js/cube.js/commit/577220ddb88c098dd3142e518fcdb73eb7513b74))
+* **cubesql:** Support `DATE_TRUNC` equals literal string ([69ba0ee](https://github.com/cube-js/cube.js/commit/69ba0eeb9724ee4105ad0d0ff39eedf92dbc715f))
+
+
+### Performance Improvements
+
+* **cubesql:** Improve rewrite engine performance ([4f78b8a](https://github.com/cube-js/cube.js/commit/4f78b8a9b75672227e7114be6a524a1b1ced8ff6))
+
+
+
+
+
+## [0.35.44](https://github.com/cube-js/cube/compare/v0.35.43...v0.35.44) (2024-06-04)
+
+**Note:** Version bump only for package @cubejs-backend/cubesql
+
+
+
+
+
+## [0.35.43](https://github.com/cube-js/cube/compare/v0.35.42...v0.35.43) (2024-05-31)
+
+
+### Features
+
+* sql api over http ([#8254](https://github.com/cube-js/cube/issues/8254)) ([4c18954](https://github.com/cube-js/cube/commit/4c18954452bf14268a2f368960a72fec45f274dc))
+
+
+
+
+
+## [0.35.42](https://github.com/cube-js/cube/compare/v0.35.41...v0.35.42) (2024-05-30)
+
+
+### Features
+
+* **cubesql:** Group By Rollup support ([#8281](https://github.com/cube-js/cube/issues/8281)) ([e563798](https://github.com/cube-js/cube/commit/e5637980489608e374f3b89cc219207973a08bbb))
+
+
+
+
+
+## [0.35.40](https://github.com/cube-js/cube/compare/v0.35.39...v0.35.40) (2024-05-24)
+
+
+### Bug Fixes
+
+* **cubesql:** Match `inDateRange` as time dimension date range in `AND` ([64f176a](https://github.com/cube-js/cube/commit/64f176ab5afc4b0771e45206bff5d6649ca8d672))
+
+
+### Features
+
+* **cubesql:** Support `DATE_TRUNC` InList filter ([48e7ad4](https://github.com/cube-js/cube/commit/48e7ad4826f6d279570badae13c93b80c28c8094))
+
+
+
+
+
+## [0.35.39](https://github.com/cube-js/cube/compare/v0.35.38...v0.35.39) (2024-05-24)
+
+
+### Bug Fixes
+
+* **cubesql:** Fix time dimension range filter chaining with `OR` operator ([757c4c5](https://github.com/cube-js/cube/commit/757c4c51f608c34b8a857ef7a98229bb3f7b04bb))
+
+
+### Features
+
+* **cubesql:** Flatten list expression rewrites to improve performance ([96c1549](https://github.com/cube-js/cube/commit/96c1549e1dc2d51f94aacd8fd1b95baef31cc0b1))
+
+
+
+
+
 ## [0.35.37](https://github.com/cube-js/cube/compare/v0.35.36...v0.35.37) (2024-05-20)
 
 

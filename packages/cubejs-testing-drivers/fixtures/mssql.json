@@ -90,6 +90,23 @@
           "CUBE.totalSales",
           "CUBE.totalProfit"
         ]
+      },
+      {
+        "name": "MultiTimeDimForCount",
+        "time_dimensions": [
+          {
+            "dimension": "CUBE.completedDate",
+            "granularity": "day"
+          },
+          {
+            "dimension": "CUBE.orderDate",
+            "granularity": "day"
+          }
+        ],
+        "partition_granularity": "month",
+        "measures": [
+          "CUBE.count"
+        ]
       }
     ]
   },
@@ -121,6 +138,9 @@
     "SQL API: reuse params",
     "SQL API: post-aggregate percentage of total",
     "SQL API: powerbi min max ungrouped flag",
-    "SQL API: powerbi min max push down"
+    "SQL API: powerbi min max push down",
+    "SQL API: Simple Rollup",
+    "SQL API: Complex Rollup",
+    "SQL API: Nested Rollup"
   ]
 }

@@ -10,7 +10,7 @@ homepage = "https://cube.dev"
 
 [dependencies]
 arc-swap = "1"
-datafusion = { git = 'https://github.com/cube-js/arrow-datafusion.git', rev = "0377c9965b2667196a6950f95a51898ef6288fdd", default-features = false, features = ["regex_expressions", "unicode_expressions"] }
+datafusion = { git = 'https://github.com/cube-js/arrow-datafusion.git', rev = "b422feb2e915edfc927562adab41c43f7d618138", default-features = false, features = ["regex_expressions", "unicode_expressions"] }
 anyhow = "1.0"
 thiserror = "1.0.50"
 cubeclient = { path = "../cubeclient" }
@@ -40,7 +40,7 @@ async-trait = "0.1.36"
 regex = "1.5"
 uuid = { version = "0.8", features = ["serde", "v4"] }
 bincode = "1.3.1"
-chrono = "0.4.16"
+chrono = "0.4.31"
 chrono-tz = "0.6"
 mockall = "0.8.1"
 reqwest = { version = "0.11.0", features = ["json", "rustls-tls"], default-features = false }
@@ -48,7 +48,7 @@ nanoid = "0.3.0"
 tokio-util = { version = "0.6.2", features=["compat"] }
 comfy-table = "7.1.0"
 bitflags = "1.3.2"
-egg = {rev = "7e60716cc757448bd672f2dc28ef9a0d074dce71", git = "https://github.com/egraphs-good/egg.git"}
+egg = { rev = "58c2586473360f0821e91ef196b55070ac1afedc", git = "https://github.com/cube-js/egg.git" }
 paste = "1.0.6"
 csv = "1.1.6"
 tracing = { version = "0.1.40", features = ["async-await"] }
