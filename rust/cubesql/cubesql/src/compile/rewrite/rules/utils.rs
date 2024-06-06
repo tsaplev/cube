@@ -1,14 +1,22 @@
-use std::cmp::{max, min};
+use std::{
+    cmp::{max, min},
+    sync::Arc,
+};
 
 use chrono::{Datelike, NaiveDateTime, Timelike};
 use datafusion::{
+    error::DataFusionError,
     logical_plan::{Expr, Operator},
     physical_plan::aggregates::AggregateFunction,
     scalar::ScalarValue,
 };
 
-use crate::compile::rewrite::{
-    analysis::LogicalPlanAnalysis, BinaryExprOp, LiteralExprValue, LogicalPlanLanguage,
+use crate::{
+    compile::rewrite::{
+        analysis::LogicalPlanAnalysis, BinaryExprOp, LiteralExprValue, LogicalPlanLanguage,
+    },
+    transport::SqlTemplates,
+    CubeError,
 };
 
 use egg::{EGraph, Id};
@@ -203,6 +211,9 @@ impl DecomposedDayTime {
     /// DAY_BITS | MS_BITS
     const MS_BITS: i32 = 32;
 
+    const DAY: &'static str = "DAY";
+    const MS: &'static str = "MILLISECOND";
+
     /// # Args
     /// * `interval` is value from `ScalarValue::IntervalDayTime(Some(interval))`
     pub fn from_interval(interval: i64) -> Self {
@@ -260,6 +271,44 @@ impl DecomposedDayTime {
             }
         }
     }
+
+    pub fn generate_interval_sql(
+        &self,
+        templates: &Arc<SqlTemplates>,
+    ) -> Result<String, DataFusionError> {
+        let single = !templates.contains_template("expressions/interval");
+        match single {
+            true => self.generate_single_interval_sql(templates),
+            _ => self.generate_plural_interval_sql(templates),
+        }
+        .map_err(|e| DataFusionError::Internal(format!("Can't generate SQL for interval: {}", e)))
+    }
+    fn generate_single_interval_sql(
+        &self,
+        templates: &Arc<SqlTemplates>,
+    ) -> Result<String, CubeError> {
+        match (self.days as i64, self.ms as i64) {
+            (0, ms) => templates.interval_single_expr(ms, Self::MS),
+            (days, 0) => templates.interval_single_expr(days, Self::DAY),
+            (days, ms) => {
+                let days = templates.interval_single_expr(days, Self::DAY)?;
+                let ms = templates.interval_single_expr(ms, Self::MS)?;
+                Ok(format!("({days} + {ms})"))
+            }
+        }
+    }
+    fn generate_plural_interval_sql(
+        &self,
+        templates: &Arc<SqlTemplates>,
+    ) -> Result<String, CubeError> {
+        const MS: &str = DecomposedDayTime::MS;
+        const DAY: &str = DecomposedDayTime::DAY;
+        match (self.days, self.ms) {
+            (0, ms) => templates.interval_expr(format!("{ms} {MS}")),
+            (days, 0) => templates.interval_expr(format!("{days} {DAY}")),
+            (days, ms) => templates.interval_expr(format!("{days} {DAY} {ms} {MS}")),
+        }
+    }
 }
 
 pub struct DecomposedMonthDayNano {
@@ -275,6 +324,10 @@ impl DecomposedMonthDayNano {
     const MONTH_SH: i32 = Self::DAY_BITS + Self::MS_BITS;
     const DAY_SH: i32 = Self::MS_BITS;
     const MS_TO_NS: i64 = 1_000_000;
+
+    const MONTH: &'static str = "MONTH";
+    const DAY: &'static str = "DAY";
+    const MS: &'static str = "MILLISECOND";
 
     /// # Args
     /// * `interval` is value from `ScalarValue::IntervalMonthDayNano(Some(interval))`
@@ -366,6 +419,67 @@ impl DecomposedMonthDayNano {
                 let right = add_binary(egraph, self.days_scalar(), self.ms_scalar());
 
                 egraph.add(LogicalPlanLanguage::BinaryExpr([left, op, right]))
+            }
+        }
+    }
+
+    pub fn generate_interval_sql(
+        &self,
+        templates: &Arc<SqlTemplates>,
+    ) -> Result<String, DataFusionError> {
+        let single = !templates.contains_template("expressions/interval");
+        match single {
+            true => self.generate_single_interval_sql(templates),
+            _ => self.generate_plural_interval_sql(templates),
+        }
+        .map_err(|e| DataFusionError::Internal(format!("Can't generate SQL for interval: {}", e)))
+    }
+    fn generate_single_interval_sql(
+        &self,
+        templates: &Arc<SqlTemplates>,
+    ) -> Result<String, CubeError> {
+        let gen_two_parts = |num1, date_part1, num2, date_part2| {
+            let interval1 = templates.interval_single_expr(num1, date_part1)?;
+            let interval2 = templates.interval_single_expr(num2, date_part2)?;
+            Ok(format!("({interval1} + {interval2})"))
+        };
+
+        match (self.months as i64, self.days as i64, self.ms) {
+            (0, 0, ms) => templates.interval_single_expr(ms, Self::MS),
+            (0, days, 0) => templates.interval_single_expr(days, Self::DAY),
+            (mons, 0, 0) => templates.interval_single_expr(mons, Self::MONTH),
+            (0, days, ms) => gen_two_parts(days, Self::DAY, ms, Self::MS),
+            (mons, 0, ms) => gen_two_parts(mons, Self::MONTH, ms, Self::MS),
+            (mons, days, 0) => gen_two_parts(mons, Self::MONTH, days, Self::DAY),
+            (mons, days, ms) => {
+                let mons = templates.interval_single_expr(mons, Self::MONTH)?;
+                let days = templates.interval_single_expr(days, Self::DAY)?;
+                let ms = templates.interval_single_expr(ms, Self::MS)?;
+                Ok(format!("({mons} + {days} + {ms})"))
+            }
+        }
+    }
+    fn generate_plural_interval_sql(
+        &self,
+        templates: &Arc<SqlTemplates>,
+    ) -> Result<String, CubeError> {
+        const MS: &str = DecomposedMonthDayNano::MS;
+        const DAY: &str = DecomposedMonthDayNano::DAY;
+        const MONTH: &str = DecomposedMonthDayNano::MONTH;
+
+        let gen_two_parts = |num1, date_part1, num2, date_part2| {
+            templates.interval_expr(format!("{num1} {date_part1} {num2} {date_part2}"))
+        };
+
+        match (self.months as i64, self.days as i64, self.ms) {
+            (0, 0, ms) => templates.interval_expr(format!("{ms} {MS}")),
+            (0, days, 0) => templates.interval_expr(format!("{days} {DAY}")),
+            (mons, 0, 0) => templates.interval_expr(format!("{mons} {MONTH}")),
+            (0, days, ms) => gen_two_parts(days, DAY, ms, MS),
+            (mons, 0, ms) => gen_two_parts(mons, MONTH, ms, MS),
+            (mons, days, 0) => gen_two_parts(mons, MONTH, days, DAY),
+            (mons, days, ms) => {
+                templates.interval_expr(format!("{mons} {MONTH} {days} {DAY} {ms} {MS}"))
             }
         }
     }

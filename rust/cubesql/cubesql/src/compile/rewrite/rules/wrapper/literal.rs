@@ -118,6 +118,9 @@ impl WrapperRules {
 
                     macro_rules! ret {
                         () => {{
+                            // return without changing:
+                            // id is `LiteralExprValue`
+                            // literal_expr("?value") --> literal_expr("?value")
                             let id = egraph.add(LogicalPlanLanguage::LiteralExpr([id]));
                             subst.insert(new_value_var, id);
                             return true;
@@ -125,10 +128,12 @@ impl WrapperRules {
 
                         ($interval:ident; $DecomposeTy:ty) => {{
                             if contains_template("expressions/interval") {
+                                // we can use nondecomposed intervals
                                 ret!()
                             }
                             let decomposed = <$DecomposeTy>::from_interval(*$interval);
                             if decomposed.is_single_part() {
+                                // interval already decomposed (only one date part)
                                 ret!()
                             }
                             let id = decomposed.add_decomposed_to_egraph(egraph);
