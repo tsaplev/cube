@@ -278,26 +278,24 @@ impl DecomposedDayTime {
     ) -> Result<String, DataFusionError> {
         let single = !templates.contains_template("expressions/interval");
         match single {
-            true => self.generate_single_interval_sql(templates),
-            _ => self.generate_plural_interval_sql(templates),
+            true => self.generate_simple_interval_sql(templates),
+            _ => self.generate_composite_interval_sql(templates),
         }
         .map_err(|e| DataFusionError::Internal(format!("Can't generate SQL for interval: {}", e)))
     }
-    fn generate_single_interval_sql(
+    fn generate_simple_interval_sql(
         &self,
         templates: &Arc<SqlTemplates>,
     ) -> Result<String, CubeError> {
         match (self.days as i64, self.ms as i64) {
             (0, ms) => templates.interval_single_expr(ms, Self::MS),
             (days, 0) => templates.interval_single_expr(days, Self::DAY),
-            (days, ms) => {
-                let days = templates.interval_single_expr(days, Self::DAY)?;
-                let ms = templates.interval_single_expr(ms, Self::MS)?;
-                Ok(format!("({days} + {ms})"))
-            }
+            (days, ms) => Err(CubeError::internal(format!(
+                "Expected simple interval, found composite one(days: {days};  ms: {ms})"
+            ))),
         }
     }
-    fn generate_plural_interval_sql(
+    fn generate_composite_interval_sql(
         &self,
         templates: &Arc<SqlTemplates>,
     ) -> Result<String, CubeError> {
@@ -429,37 +427,25 @@ impl DecomposedMonthDayNano {
     ) -> Result<String, DataFusionError> {
         let single = !templates.contains_template("expressions/interval");
         match single {
-            true => self.generate_single_interval_sql(templates),
-            _ => self.generate_plural_interval_sql(templates),
+            true => self.generate_simple_interval_sql(templates),
+            _ => self.generate_composite_interval_sql(templates),
         }
         .map_err(|e| DataFusionError::Internal(format!("Can't generate SQL for interval: {}", e)))
     }
-    fn generate_single_interval_sql(
+    fn generate_simple_interval_sql(
         &self,
         templates: &Arc<SqlTemplates>,
     ) -> Result<String, CubeError> {
-        let gen_two_parts = |num1, date_part1, num2, date_part2| {
-            let interval1 = templates.interval_single_expr(num1, date_part1)?;
-            let interval2 = templates.interval_single_expr(num2, date_part2)?;
-            Ok(format!("({interval1} + {interval2})"))
-        };
-
         match (self.months as i64, self.days as i64, self.ms) {
             (0, 0, ms) => templates.interval_single_expr(ms, Self::MS),
             (0, days, 0) => templates.interval_single_expr(days, Self::DAY),
             (mons, 0, 0) => templates.interval_single_expr(mons, Self::MONTH),
-            (0, days, ms) => gen_two_parts(days, Self::DAY, ms, Self::MS),
-            (mons, 0, ms) => gen_two_parts(mons, Self::MONTH, ms, Self::MS),
-            (mons, days, 0) => gen_two_parts(mons, Self::MONTH, days, Self::DAY),
-            (mons, days, ms) => {
-                let mons = templates.interval_single_expr(mons, Self::MONTH)?;
-                let days = templates.interval_single_expr(days, Self::DAY)?;
-                let ms = templates.interval_single_expr(ms, Self::MS)?;
-                Ok(format!("({mons} + {days} + {ms})"))
-            }
+            (mons, days, ms) => Err(CubeError::internal(format!(
+                "Expected simple interval, found composite one(months: {mons};  days: {days};  ms: {ms})"
+            ))),
         }
     }
-    fn generate_plural_interval_sql(
+    fn generate_composite_interval_sql(
         &self,
         templates: &Arc<SqlTemplates>,
     ) -> Result<String, CubeError> {
