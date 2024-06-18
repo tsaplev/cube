@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.35.50](https://github.com/cube-js/cube/compare/v0.35.49...v0.35.50) (2024-06-17)
+
+
+### Bug Fixes
+
+* **cubesql:** Proper interval dataframe values and better formatting ([57e1d74](https://github.com/cube-js/cube/commit/57e1d74bfb374eb4334489b1a0156e032077577b))
+
+
+
+
+
+## [0.35.49](https://github.com/cube-js/cube/compare/v0.35.48...v0.35.49) (2024-06-14)
+
+
+### Features
+
+* **cubesql:** Implement timestamp subtraction and epoch extraction from intervals ([1239e15](https://github.com/cube-js/cube/commit/1239e159fcb774b161f43fb7b515acb8346204fa))
+
+
+
+
+
+## [0.35.48](https://github.com/cube-js/cube/compare/v0.35.47...v0.35.48) (2024-06-14)
+
+
+### Bug Fixes
+
+* **client-react:** udpate td with a compare date range ([#8339](https://github.com/cube-js/cube/issues/8339)) ([9ef51f7](https://github.com/cube-js/cube/commit/9ef51f7b12c624873bfa79a302038db7e4b47a6a))
+* **cubesql:** Rollup don't work over subquery with asterisk projection ([#8354](https://github.com/cube-js/cube/issues/8354)) ([0bc0306](https://github.com/cube-js/cube/commit/0bc03066ac4bedec4ee2b85d381e36bb13e2edef))
+* use tablesSchema over direct information schema ([#8347](https://github.com/cube-js/cube/issues/8347)) ([a4ca555](https://github.com/cube-js/cube/commit/a4ca5553b07944dbed764bbc4b862feac793691e))
+
+
+### Features
+
+* **cubesql:** support `GREATEST`/`LEAST` SQL functions ([#8325](https://github.com/cube-js/cube/issues/8325)) ([c13a28e](https://github.com/cube-js/cube/commit/c13a28e21514c0e06e41c0ed14e97621bd777cf7))
+
+
+### Performance Improvements
+
+* **cubesql:** Use an incremental rule scheduler for egg ([5892df7](https://github.com/cube-js/cube/commit/5892df749edb0f290488a196804a5a060e5ea387))
+
+
+
+
+
+## [0.35.47](https://github.com/cube-js/cube/compare/v0.35.46...v0.35.47) (2024-06-07)
+
+
+### Bug Fixes
+
+* **cubesql:** Rollup doesn't work over aliased columns ([#8334](https://github.com/cube-js/cube/issues/8334)) ([98e7529](https://github.com/cube-js/cube/commit/98e7529975703f2d4b72cc8f21ce4f8c6fc4c8de))
+
+
+
+
+
+## [0.35.46](https://github.com/cube-js/cube/compare/v0.35.45...v0.35.46) (2024-06-06)
+
+
+### Bug Fixes
+
+* **cubestore:** Channel closed in query queue cache ([#8327](https://github.com/cube-js/cube/issues/8327)) ([8898fb1](https://github.com/cube-js/cube/commit/8898fb19bb39dd4778fee695df1ef8497ee28eb2))
+
+
+
+
+
 ## [0.35.45](https://github.com/cube-js/cube/compare/v0.35.44...v0.35.45) (2024-06-05)
 
 

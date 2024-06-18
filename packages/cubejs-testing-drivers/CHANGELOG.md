@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.35.50](https://github.com/cube-js/cube/compare/v0.35.49...v0.35.50) (2024-06-17)
+
+**Note:** Version bump only for package @cubejs-backend/testing-drivers
+
+
+
+
+
+## [0.35.49](https://github.com/cube-js/cube/compare/v0.35.48...v0.35.49) (2024-06-14)
+
+**Note:** Version bump only for package @cubejs-backend/testing-drivers
+
+
+
+
+
+## [0.35.48](https://github.com/cube-js/cube/compare/v0.35.47...v0.35.48) (2024-06-14)
+
+
+### Bug Fixes
+
+* **cubesql:** Rollup don't work over subquery with asterisk projection ([#8354](https://github.com/cube-js/cube/issues/8354)) ([0bc0306](https://github.com/cube-js/cube/commit/0bc03066ac4bedec4ee2b85d381e36bb13e2edef))
+
+
+
+
+
+## [0.35.47](https://github.com/cube-js/cube.js/compare/v0.35.46...v0.35.47) (2024-06-07)
+
+
+### Bug Fixes
+
+* **cubesql:** Rollup doesn't work over aliased columns ([#8334](https://github.com/cube-js/cube.js/issues/8334)) ([98e7529](https://github.com/cube-js/cube.js/commit/98e7529975703f2d4b72cc8f21ce4f8c6fc4c8de))
+
+
+
+
+
+## [0.35.46](https://github.com/cube-js/cube.js/compare/v0.35.45...v0.35.46) (2024-06-06)
+
+**Note:** Version bump only for package @cubejs-backend/testing-drivers
+
+
+
+
+
 ## [0.35.45](https://github.com/cube-js/cube.js/compare/v0.35.44...v0.35.45) (2024-06-05)
 
 **Note:** Version bump only for package @cubejs-backend/testing-drivers

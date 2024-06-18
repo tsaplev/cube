@@ -1797,6 +1797,2062 @@ Array [
 ]
 `;
 
+exports[`Queries with the @cubejs-backend/postgres-driver SQL API: Extended nested Rollup over asterisk: extended_nested_rollup_over_asterisk 1`] = `
+Array [
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-145142",
+    "row": 523,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 523,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-107503",
+    "row": 849,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 849,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-118437",
+    "row": 1013,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 1013,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-139661",
+    "row": 1494,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 1494,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-133648",
+    "row": 1995,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 1995,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-138422",
+    "row": 2329,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 2329,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-140949",
+    "row": 2455,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 2455,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-149048",
+    "row": 2595,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 2595,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-112515",
+    "row": 2655,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 2655,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-123372",
+    "row": 2661,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 2661,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-134915",
+    "row": 2952,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 2952,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-131492",
+    "row": 3059,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 3059,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-131492",
+    "row": 3060,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 3060,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "US-2017-132297",
+    "row": 3083,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 3083,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-102554",
+    "row": 3448,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 3448,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-144568",
+    "row": 3717,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 3717,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-123001",
+    "row": 3934,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 3934,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-100811",
+    "row": 4012,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 4012,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-124296",
+    "row": 4031,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 4031,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-115546",
+    "row": 4161,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 4161,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-120327",
+    "row": 4227,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 4227,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-143567",
+    "row": 4882,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 4882,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-145653",
+    "row": 5220,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 5220,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-147333",
+    "row": 5277,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 5277,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-145772",
+    "row": 6125,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 6125,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-145660",
+    "row": 6205,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 6205,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-102379",
+    "row": 6272,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 6272,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "US-2017-133361",
+    "row": 6459,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 6459,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "US-2017-124779",
+    "row": 6651,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 6651,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "US-2017-141677",
+    "row": 7174,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 7174,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-109183",
+    "row": 7293,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 7293,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-112172",
+    "row": 7310,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 7310,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-135069",
+    "row": 7425,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 7425,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-151799",
+    "row": 7698,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 7698,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-150091",
+    "row": 8425,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 8425,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "US-2017-119319",
+    "row": 8621,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 8621,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-163265",
+    "row": 8673,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 8673,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-119284",
+    "row": 8697,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 8697,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-126928",
+    "row": 8878,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 8878,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-105620",
+    "row": 8958,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 8958,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-102925",
+    "row": 9473,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 9473,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-116127",
+    "row": 9584,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 9584,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-160633",
+    "row": 9618,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 9618,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": "CA-2017-160633",
+    "row": 9619,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "order": null,
+    "row": 9619,
+  },
+  Object {
+    "SUM(a.count)": "44",
+    "order": null,
+    "row": null,
+  },
+]
+`;
+
+exports[`Queries with the @cubejs-backend/postgres-driver SQL API: Nested Rollup over asterisk: nested_rollup_over_asterisk 1`] = `
+Array [
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-01-23T00:00:00.000Z,
+    "order": "CA-2017-145142",
+    "row": 523,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-145142",
+    "row": 523,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 523,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-01-01T00:00:00.000Z,
+    "order": "CA-2017-107503",
+    "row": 849,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-107503",
+    "row": 849,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 849,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-06-17T00:00:00.000Z,
+    "order": "CA-2017-118437",
+    "row": 1013,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-118437",
+    "row": 1013,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 1013,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-10-30T00:00:00.000Z,
+    "order": "CA-2017-139661",
+    "row": 1494,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-139661",
+    "row": 1494,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 1494,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-06-25T00:00:00.000Z,
+    "order": "CA-2017-133648",
+    "row": 1995,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-133648",
+    "row": 1995,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 1995,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-09-23T00:00:00.000Z,
+    "order": "CA-2017-138422",
+    "row": 2329,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-138422",
+    "row": 2329,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 2329,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-03-17T00:00:00.000Z,
+    "order": "CA-2017-140949",
+    "row": 2455,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-140949",
+    "row": 2455,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 2455,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-05-13T00:00:00.000Z,
+    "order": "CA-2017-149048",
+    "row": 2595,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-149048",
+    "row": 2595,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 2595,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-09-17T00:00:00.000Z,
+    "order": "CA-2017-112515",
+    "row": 2655,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-112515",
+    "row": 2655,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 2655,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-11-28T00:00:00.000Z,
+    "order": "CA-2017-123372",
+    "row": 2661,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-123372",
+    "row": 2661,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 2661,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-11-12T00:00:00.000Z,
+    "order": "CA-2017-134915",
+    "row": 2952,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-134915",
+    "row": 2952,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 2952,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-10-19T00:00:00.000Z,
+    "order": "CA-2017-131492",
+    "row": 3059,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-131492",
+    "row": 3059,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 3059,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-10-19T00:00:00.000Z,
+    "order": "CA-2017-131492",
+    "row": 3060,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-131492",
+    "row": 3060,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 3060,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-05-27T00:00:00.000Z,
+    "order": "US-2017-132297",
+    "row": 3083,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "US-2017-132297",
+    "row": 3083,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 3083,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-06-11T00:00:00.000Z,
+    "order": "CA-2017-102554",
+    "row": 3448,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-102554",
+    "row": 3448,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 3448,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-05-29T00:00:00.000Z,
+    "order": "CA-2017-144568",
+    "row": 3717,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-144568",
+    "row": 3717,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 3717,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-09-02T00:00:00.000Z,
+    "order": "CA-2017-123001",
+    "row": 3934,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-123001",
+    "row": 3934,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 3934,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-11-21T00:00:00.000Z,
+    "order": "CA-2017-100811",
+    "row": 4012,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-100811",
+    "row": 4012,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 4012,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-12-24T00:00:00.000Z,
+    "order": "CA-2017-124296",
+    "row": 4031,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-124296",
+    "row": 4031,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 4031,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-05-14T00:00:00.000Z,
+    "order": "CA-2017-115546",
+    "row": 4161,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-115546",
+    "row": 4161,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 4161,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-11-11T00:00:00.000Z,
+    "order": "CA-2017-120327",
+    "row": 4227,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-120327",
+    "row": 4227,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 4227,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-11-02T00:00:00.000Z,
+    "order": "CA-2017-143567",
+    "row": 4882,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-143567",
+    "row": 4882,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 4882,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-09-01T00:00:00.000Z,
+    "order": "CA-2017-145653",
+    "row": 5220,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-145653",
+    "row": 5220,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 5220,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-12-14T00:00:00.000Z,
+    "order": "CA-2017-147333",
+    "row": 5277,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-147333",
+    "row": 5277,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 5277,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-06-03T00:00:00.000Z,
+    "order": "CA-2017-145772",
+    "row": 6125,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-145772",
+    "row": 6125,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 6125,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-12-01T00:00:00.000Z,
+    "order": "CA-2017-145660",
+    "row": 6205,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-145660",
+    "row": 6205,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 6205,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-12-02T00:00:00.000Z,
+    "order": "CA-2017-102379",
+    "row": 6272,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-102379",
+    "row": 6272,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 6272,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-05-14T00:00:00.000Z,
+    "order": "US-2017-133361",
+    "row": 6459,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "US-2017-133361",
+    "row": 6459,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 6459,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-09-08T00:00:00.000Z,
+    "order": "US-2017-124779",
+    "row": 6651,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "US-2017-124779",
+    "row": 6651,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 6651,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-03-26T00:00:00.000Z,
+    "order": "US-2017-141677",
+    "row": 7174,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "US-2017-141677",
+    "row": 7174,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 7174,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-12-04T00:00:00.000Z,
+    "order": "CA-2017-109183",
+    "row": 7293,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-109183",
+    "row": 7293,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 7293,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-06-10T00:00:00.000Z,
+    "order": "CA-2017-112172",
+    "row": 7310,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-112172",
+    "row": 7310,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 7310,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-04-10T00:00:00.000Z,
+    "order": "CA-2017-135069",
+    "row": 7425,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-135069",
+    "row": 7425,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 7425,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-12-14T00:00:00.000Z,
+    "order": "CA-2017-151799",
+    "row": 7698,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-151799",
+    "row": 7698,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 7698,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-10-12T00:00:00.000Z,
+    "order": "CA-2017-150091",
+    "row": 8425,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-150091",
+    "row": 8425,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 8425,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-11-06T00:00:00.000Z,
+    "order": "US-2017-119319",
+    "row": 8621,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "US-2017-119319",
+    "row": 8621,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 8621,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-02-16T00:00:00.000Z,
+    "order": "CA-2017-163265",
+    "row": 8673,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-163265",
+    "row": 8673,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 8673,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-06-15T00:00:00.000Z,
+    "order": "CA-2017-119284",
+    "row": 8697,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-119284",
+    "row": 8697,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 8697,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-09-17T00:00:00.000Z,
+    "order": "CA-2017-126928",
+    "row": 8878,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-126928",
+    "row": 8878,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 8878,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-12-25T00:00:00.000Z,
+    "order": "CA-2017-105620",
+    "row": 8958,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-105620",
+    "row": 8958,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 8958,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-11-05T00:00:00.000Z,
+    "order": "CA-2017-102925",
+    "row": 9473,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-102925",
+    "row": 9473,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 9473,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-06-25T00:00:00.000Z,
+    "order": "CA-2017-116127",
+    "row": 9584,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-116127",
+    "row": 9584,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 9584,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-11-16T00:00:00.000Z,
+    "order": "CA-2017-160633",
+    "row": 9618,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-160633",
+    "row": 9618,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 9618,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": 2020-11-16T00:00:00.000Z,
+    "order": "CA-2017-160633",
+    "row": 9619,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": "CA-2017-160633",
+    "row": 9619,
+  },
+  Object {
+    "SUM(a.count)": "1",
+    "date": null,
+    "order": null,
+    "row": 9619,
+  },
+  Object {
+    "SUM(a.count)": "44",
+    "date": null,
+    "order": null,
+    "row": null,
+  },
+]
+`;
+
+exports[`Queries with the @cubejs-backend/postgres-driver SQL API: Nested Rollup with aliases: nested_rollup_with_aliases 1`] = `
+Array [
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-01-23T00:00:00.000Z,
+    "order": "CA-2017-145142",
+    "row": 523,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-145142",
+    "row": 523,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 523,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-01-01T00:00:00.000Z,
+    "order": "CA-2017-107503",
+    "row": 849,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-107503",
+    "row": 849,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 849,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-06-17T00:00:00.000Z,
+    "order": "CA-2017-118437",
+    "row": 1013,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-118437",
+    "row": 1013,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 1013,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-10-30T00:00:00.000Z,
+    "order": "CA-2017-139661",
+    "row": 1494,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-139661",
+    "row": 1494,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 1494,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-06-25T00:00:00.000Z,
+    "order": "CA-2017-133648",
+    "row": 1995,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-133648",
+    "row": 1995,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 1995,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-09-23T00:00:00.000Z,
+    "order": "CA-2017-138422",
+    "row": 2329,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-138422",
+    "row": 2329,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 2329,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-03-17T00:00:00.000Z,
+    "order": "CA-2017-140949",
+    "row": 2455,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-140949",
+    "row": 2455,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 2455,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-05-13T00:00:00.000Z,
+    "order": "CA-2017-149048",
+    "row": 2595,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-149048",
+    "row": 2595,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 2595,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-09-17T00:00:00.000Z,
+    "order": "CA-2017-112515",
+    "row": 2655,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-112515",
+    "row": 2655,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 2655,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-11-28T00:00:00.000Z,
+    "order": "CA-2017-123372",
+    "row": 2661,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-123372",
+    "row": 2661,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 2661,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-11-12T00:00:00.000Z,
+    "order": "CA-2017-134915",
+    "row": 2952,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-134915",
+    "row": 2952,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 2952,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-10-19T00:00:00.000Z,
+    "order": "CA-2017-131492",
+    "row": 3059,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-131492",
+    "row": 3059,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 3059,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-10-19T00:00:00.000Z,
+    "order": "CA-2017-131492",
+    "row": 3060,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-131492",
+    "row": 3060,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 3060,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-05-27T00:00:00.000Z,
+    "order": "US-2017-132297",
+    "row": 3083,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "US-2017-132297",
+    "row": 3083,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 3083,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-06-11T00:00:00.000Z,
+    "order": "CA-2017-102554",
+    "row": 3448,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-102554",
+    "row": 3448,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 3448,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-05-29T00:00:00.000Z,
+    "order": "CA-2017-144568",
+    "row": 3717,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-144568",
+    "row": 3717,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 3717,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-09-02T00:00:00.000Z,
+    "order": "CA-2017-123001",
+    "row": 3934,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-123001",
+    "row": 3934,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 3934,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-11-21T00:00:00.000Z,
+    "order": "CA-2017-100811",
+    "row": 4012,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-100811",
+    "row": 4012,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 4012,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-12-24T00:00:00.000Z,
+    "order": "CA-2017-124296",
+    "row": 4031,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-124296",
+    "row": 4031,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 4031,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-05-14T00:00:00.000Z,
+    "order": "CA-2017-115546",
+    "row": 4161,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-115546",
+    "row": 4161,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 4161,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-11-11T00:00:00.000Z,
+    "order": "CA-2017-120327",
+    "row": 4227,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-120327",
+    "row": 4227,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 4227,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-11-02T00:00:00.000Z,
+    "order": "CA-2017-143567",
+    "row": 4882,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-143567",
+    "row": 4882,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 4882,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-09-01T00:00:00.000Z,
+    "order": "CA-2017-145653",
+    "row": 5220,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-145653",
+    "row": 5220,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 5220,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-12-14T00:00:00.000Z,
+    "order": "CA-2017-147333",
+    "row": 5277,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-147333",
+    "row": 5277,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 5277,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-06-03T00:00:00.000Z,
+    "order": "CA-2017-145772",
+    "row": 6125,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-145772",
+    "row": 6125,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 6125,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-12-01T00:00:00.000Z,
+    "order": "CA-2017-145660",
+    "row": 6205,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-145660",
+    "row": 6205,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 6205,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-12-02T00:00:00.000Z,
+    "order": "CA-2017-102379",
+    "row": 6272,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-102379",
+    "row": 6272,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 6272,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-05-14T00:00:00.000Z,
+    "order": "US-2017-133361",
+    "row": 6459,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "US-2017-133361",
+    "row": 6459,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 6459,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-09-08T00:00:00.000Z,
+    "order": "US-2017-124779",
+    "row": 6651,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "US-2017-124779",
+    "row": 6651,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 6651,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-03-26T00:00:00.000Z,
+    "order": "US-2017-141677",
+    "row": 7174,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "US-2017-141677",
+    "row": 7174,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 7174,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-12-04T00:00:00.000Z,
+    "order": "CA-2017-109183",
+    "row": 7293,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-109183",
+    "row": 7293,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 7293,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-06-10T00:00:00.000Z,
+    "order": "CA-2017-112172",
+    "row": 7310,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-112172",
+    "row": 7310,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 7310,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-04-10T00:00:00.000Z,
+    "order": "CA-2017-135069",
+    "row": 7425,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-135069",
+    "row": 7425,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 7425,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-12-14T00:00:00.000Z,
+    "order": "CA-2017-151799",
+    "row": 7698,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-151799",
+    "row": 7698,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 7698,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-10-12T00:00:00.000Z,
+    "order": "CA-2017-150091",
+    "row": 8425,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-150091",
+    "row": 8425,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 8425,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-11-06T00:00:00.000Z,
+    "order": "US-2017-119319",
+    "row": 8621,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "US-2017-119319",
+    "row": 8621,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 8621,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-02-16T00:00:00.000Z,
+    "order": "CA-2017-163265",
+    "row": 8673,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-163265",
+    "row": 8673,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 8673,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-06-15T00:00:00.000Z,
+    "order": "CA-2017-119284",
+    "row": 8697,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-119284",
+    "row": 8697,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 8697,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-09-17T00:00:00.000Z,
+    "order": "CA-2017-126928",
+    "row": 8878,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-126928",
+    "row": 8878,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 8878,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-12-25T00:00:00.000Z,
+    "order": "CA-2017-105620",
+    "row": 8958,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-105620",
+    "row": 8958,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 8958,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-11-05T00:00:00.000Z,
+    "order": "CA-2017-102925",
+    "row": 9473,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-102925",
+    "row": 9473,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 9473,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-06-25T00:00:00.000Z,
+    "order": "CA-2017-116127",
+    "row": 9584,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-116127",
+    "row": 9584,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 9584,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-11-16T00:00:00.000Z,
+    "order": "CA-2017-160633",
+    "row": 9618,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-160633",
+    "row": 9618,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 9618,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": 2020-11-16T00:00:00.000Z,
+    "order": "CA-2017-160633",
+    "row": 9619,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": "CA-2017-160633",
+    "row": 9619,
+  },
+  Object {
+    "SUM(a.cnt)": "1",
+    "date": null,
+    "order": null,
+    "row": 9619,
+  },
+  Object {
+    "SUM(a.cnt)": "44",
+    "date": null,
+    "order": null,
+    "row": null,
+  },
+]
+`;
+
 exports[`Queries with the @cubejs-backend/postgres-driver SQL API: Nested Rollup: nested_rollup 1`] = `
 Array [
   Object {
@@ -2596,6 +4652,2606 @@ Array [
     "orderDate": null,
     "orderId": null,
     "rowId": null,
+  },
+]
+`;
+
+exports[`Queries with the @cubejs-backend/postgres-driver SQL API: Rollup over exprs: rollup_over_exprs 1`] = `
+Array [
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Detroit",
+    "order": 944.96,
+    "orderData": 2020-01-23T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 944.96,
+    "orderData": 2020-01-23T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 944.96,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Lorain",
+    "order": 946.792,
+    "orderData": 2020-01-01T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 946.792,
+    "orderData": 2020-01-01T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 946.792,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Olympia",
+    "order": 1041.06,
+    "orderData": 2020-06-17T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 1041.06,
+    "orderData": 2020-06-17T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 1041.06,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Vancouver",
+    "order": 1513.28,
+    "orderData": 2020-10-30T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 1513.28,
+    "orderData": 2020-10-30T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 1513.28,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": 2017.608,
+    "orderData": 2020-06-25T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 2017.608,
+    "orderData": 2020-06-25T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 2017.608,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": 2357.704,
+    "orderData": 2020-09-23T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 2357.704,
+    "orderData": 2020-09-23T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 2357.704,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": 2598.2,
+    "orderData": 2020-03-17T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 2598.2,
+    "orderData": 2020-03-17T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 2598.2,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": 2956.92,
+    "orderData": 2020-05-13T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 2956.92,
+    "orderData": 2020-05-13T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 2956.92,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "San Francisco",
+    "order": 3108.736,
+    "orderData": 2020-10-19T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 3108.736,
+    "orderData": 2020-10-19T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 3108.736,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "San Francisco",
+    "order": 3120.12,
+    "orderData": 2020-10-19T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 3120.12,
+    "orderData": 2020-10-19T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 3120.12,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Glendale",
+    "order": 3179.776,
+    "orderData": 2020-11-12T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 3179.776,
+    "orderData": 2020-11-12T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 3179.776,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Auburn",
+    "order": 3455.52,
+    "orderData": 2020-06-11T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 3455.52,
+    "orderData": 2020-06-11T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 3455.52,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Omaha",
+    "order": 3764.1,
+    "orderData": 2020-05-29T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 3764.1,
+    "orderData": 2020-05-29T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 3764.1,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Bakersfield",
+    "order": 3952.8,
+    "orderData": 2020-09-02T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 3952.8,
+    "orderData": 2020-09-02T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 3952.8,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Philadelphia",
+    "order": 4090.592,
+    "orderData": 2020-11-21T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 4090.592,
+    "orderData": 2020-11-21T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 4090.592,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Louisville",
+    "order": 4162.94,
+    "orderData": 2020-05-27T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 4162.94,
+    "orderData": 2020-05-27T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 4162.94,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": 4318.84,
+    "orderData": 2020-11-11T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 4318.84,
+    "orderData": 2020-11-11T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 4318.84,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Lafayette",
+    "order": 4496.76,
+    "orderData": 2020-12-24T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 4496.76,
+    "orderData": 2020-12-24T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 4496.76,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Provo",
+    "order": 5240.88,
+    "orderData": 2020-09-17T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 5240.88,
+    "orderData": 2020-09-17T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 5240.88,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": 5240.94,
+    "orderData": 2020-05-14T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 5240.94,
+    "orderData": 2020-05-14T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 5240.94,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": 5366.5,
+    "orderData": 2020-12-14T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 5366.5,
+    "orderData": 2020-12-14T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 5366.5,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Los Angeles",
+    "order": 6214.5,
+    "orderData": 2020-06-03T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 6214.5,
+    "orderData": 2020-06-03T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 6214.5,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Detroit",
+    "order": 6216.52,
+    "orderData": 2020-09-01T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 6216.52,
+    "orderData": 2020-09-01T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 6216.52,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Marion",
+    "order": 6220.424,
+    "orderData": 2020-12-01T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 6220.424,
+    "orderData": 2020-12-01T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 6220.424,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Baltimore",
+    "order": 6466.52,
+    "orderData": 2020-05-14T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 6466.52,
+    "orderData": 2020-05-14T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 6466.52,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": 6620.78,
+    "orderData": 2020-11-28T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 6620.78,
+    "orderData": 2020-11-28T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 6620.78,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Oakland",
+    "order": 6631.8,
+    "orderData": 2020-12-02T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 6631.8,
+    "orderData": 2020-12-02T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 6631.8,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Arlington",
+    "order": 6742.84,
+    "orderData": 2020-09-08T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 6742.84,
+    "orderData": 2020-09-08T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 6742.84,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": 7338.26,
+    "orderData": 2020-06-10T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 7338.26,
+    "orderData": 2020-06-10T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 7338.26,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Philadelphia",
+    "order": 7498.344,
+    "orderData": 2020-04-10T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 7498.344,
+    "orderData": 2020-04-10T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 7498.344,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": 8591,
+    "orderData": 2020-12-04T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 8591,
+    "orderData": 2020-12-04T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 8591,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Dallas",
+    "order": 8682.12,
+    "orderData": 2020-11-06T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 8682.12,
+    "orderData": 2020-11-06T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 8682.12,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Decatur",
+    "order": 8709.736,
+    "orderData": 2020-02-16T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 8709.736,
+    "orderData": 2020-02-16T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 8709.736,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": 9176.952,
+    "orderData": 2020-06-15T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 9176.952,
+    "orderData": 2020-06-15T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 9176.952,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": 9198,
+    "orderData": 2020-12-25T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 9198,
+    "orderData": 2020-12-25T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 9198,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": 9381.82,
+    "orderData": 2020-11-02T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 9381.82,
+    "orderData": 2020-11-02T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 9381.82,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": 9729.248,
+    "orderData": 2020-11-05T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 9729.248,
+    "orderData": 2020-11-05T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 9729.248,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Bowling",
+    "order": 9791.704,
+    "orderData": 2020-11-16T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 9791.704,
+    "orderData": 2020-11-16T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 9791.704,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Morristown",
+    "order": 9838,
+    "orderData": 2020-09-17T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 9838,
+    "orderData": 2020-09-17T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 9838,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": 10097.96,
+    "orderData": 2020-12-14T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 10097.96,
+    "orderData": 2020-12-14T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 10097.96,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": 10385.568,
+    "orderData": 2020-06-25T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 10385.568,
+    "orderData": 2020-06-25T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 10385.568,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": 11417.964,
+    "orderData": 2020-11-16T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 11417.964,
+    "orderData": 2020-11-16T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 11417.964,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Houston",
+    "order": 11973.92,
+    "orderData": 2020-03-26T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 11973.92,
+    "orderData": 2020-03-26T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 11973.92,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Lakewood",
+    "order": 12734.8,
+    "orderData": 2020-10-12T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 12734.8,
+    "orderData": 2020-10-12T00:00:00.000Z,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": 12734.8,
+    "orderData": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "44",
+    "city": null,
+    "order": null,
+    "orderData": null,
+  },
+]
+`;
+
+exports[`Queries with the @cubejs-backend/postgres-driver SQL API: Rollup with aliases: rollup_with_aliases 1`] = `
+Array [
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Detroit",
+    "order": "CA-2017-145142",
+    "orderData": 2020-01-23T00:00:00.000Z,
+    "row": 523,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-145142",
+    "orderData": 2020-01-23T00:00:00.000Z,
+    "row": 523,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Detroit",
+    "order": null,
+    "orderData": 2020-01-23T00:00:00.000Z,
+    "row": 523,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-01-23T00:00:00.000Z,
+    "row": 523,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Lorain",
+    "order": "CA-2017-107503",
+    "orderData": 2020-01-01T00:00:00.000Z,
+    "row": 849,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-107503",
+    "orderData": 2020-01-01T00:00:00.000Z,
+    "row": 849,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Lorain",
+    "order": null,
+    "orderData": 2020-01-01T00:00:00.000Z,
+    "row": 849,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-01-01T00:00:00.000Z,
+    "row": 849,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Olympia",
+    "order": "CA-2017-118437",
+    "orderData": 2020-06-17T00:00:00.000Z,
+    "row": 1013,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-118437",
+    "orderData": 2020-06-17T00:00:00.000Z,
+    "row": 1013,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Olympia",
+    "order": null,
+    "orderData": 2020-06-17T00:00:00.000Z,
+    "row": 1013,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-06-17T00:00:00.000Z,
+    "row": 1013,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Vancouver",
+    "order": "CA-2017-139661",
+    "orderData": 2020-10-30T00:00:00.000Z,
+    "row": 1494,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-139661",
+    "orderData": 2020-10-30T00:00:00.000Z,
+    "row": 1494,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Vancouver",
+    "order": null,
+    "orderData": 2020-10-30T00:00:00.000Z,
+    "row": 1494,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-10-30T00:00:00.000Z,
+    "row": 1494,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": "CA-2017-133648",
+    "orderData": 2020-06-25T00:00:00.000Z,
+    "row": 1995,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-133648",
+    "orderData": 2020-06-25T00:00:00.000Z,
+    "row": 1995,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-06-25T00:00:00.000Z,
+    "row": 1995,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-06-25T00:00:00.000Z,
+    "row": 1995,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": "CA-2017-138422",
+    "orderData": 2020-09-23T00:00:00.000Z,
+    "row": 2329,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-138422",
+    "orderData": 2020-09-23T00:00:00.000Z,
+    "row": 2329,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-09-23T00:00:00.000Z,
+    "row": 2329,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-09-23T00:00:00.000Z,
+    "row": 2329,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": "CA-2017-140949",
+    "orderData": 2020-03-17T00:00:00.000Z,
+    "row": 2455,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-140949",
+    "orderData": 2020-03-17T00:00:00.000Z,
+    "row": 2455,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": null,
+    "orderData": 2020-03-17T00:00:00.000Z,
+    "row": 2455,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-03-17T00:00:00.000Z,
+    "row": 2455,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": "CA-2017-149048",
+    "orderData": 2020-05-13T00:00:00.000Z,
+    "row": 2595,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-149048",
+    "orderData": 2020-05-13T00:00:00.000Z,
+    "row": 2595,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-05-13T00:00:00.000Z,
+    "row": 2595,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-05-13T00:00:00.000Z,
+    "row": 2595,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Provo",
+    "order": "CA-2017-112515",
+    "orderData": 2020-09-17T00:00:00.000Z,
+    "row": 2655,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-112515",
+    "orderData": 2020-09-17T00:00:00.000Z,
+    "row": 2655,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Provo",
+    "order": null,
+    "orderData": 2020-09-17T00:00:00.000Z,
+    "row": 2655,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-09-17T00:00:00.000Z,
+    "row": 2655,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": "CA-2017-123372",
+    "orderData": 2020-11-28T00:00:00.000Z,
+    "row": 2661,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-123372",
+    "orderData": 2020-11-28T00:00:00.000Z,
+    "row": 2661,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-11-28T00:00:00.000Z,
+    "row": 2661,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-28T00:00:00.000Z,
+    "row": 2661,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Glendale",
+    "order": "CA-2017-134915",
+    "orderData": 2020-11-12T00:00:00.000Z,
+    "row": 2952,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-134915",
+    "orderData": 2020-11-12T00:00:00.000Z,
+    "row": 2952,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Glendale",
+    "order": null,
+    "orderData": 2020-11-12T00:00:00.000Z,
+    "row": 2952,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-12T00:00:00.000Z,
+    "row": 2952,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "San Francisco",
+    "order": "CA-2017-131492",
+    "orderData": 2020-10-19T00:00:00.000Z,
+    "row": 3059,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-131492",
+    "orderData": 2020-10-19T00:00:00.000Z,
+    "row": 3059,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "San Francisco",
+    "order": null,
+    "orderData": 2020-10-19T00:00:00.000Z,
+    "row": 3059,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-10-19T00:00:00.000Z,
+    "row": 3059,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "San Francisco",
+    "order": "CA-2017-131492",
+    "orderData": 2020-10-19T00:00:00.000Z,
+    "row": 3060,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-131492",
+    "orderData": 2020-10-19T00:00:00.000Z,
+    "row": 3060,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "San Francisco",
+    "order": null,
+    "orderData": 2020-10-19T00:00:00.000Z,
+    "row": 3060,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-10-19T00:00:00.000Z,
+    "row": 3060,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Louisville",
+    "order": "US-2017-132297",
+    "orderData": 2020-05-27T00:00:00.000Z,
+    "row": 3083,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "US-2017-132297",
+    "orderData": 2020-05-27T00:00:00.000Z,
+    "row": 3083,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Louisville",
+    "order": null,
+    "orderData": 2020-05-27T00:00:00.000Z,
+    "row": 3083,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-05-27T00:00:00.000Z,
+    "row": 3083,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Auburn",
+    "order": "CA-2017-102554",
+    "orderData": 2020-06-11T00:00:00.000Z,
+    "row": 3448,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-102554",
+    "orderData": 2020-06-11T00:00:00.000Z,
+    "row": 3448,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Auburn",
+    "order": null,
+    "orderData": 2020-06-11T00:00:00.000Z,
+    "row": 3448,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-06-11T00:00:00.000Z,
+    "row": 3448,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Omaha",
+    "order": "CA-2017-144568",
+    "orderData": 2020-05-29T00:00:00.000Z,
+    "row": 3717,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-144568",
+    "orderData": 2020-05-29T00:00:00.000Z,
+    "row": 3717,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Omaha",
+    "order": null,
+    "orderData": 2020-05-29T00:00:00.000Z,
+    "row": 3717,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-05-29T00:00:00.000Z,
+    "row": 3717,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Bakersfield",
+    "order": "CA-2017-123001",
+    "orderData": 2020-09-02T00:00:00.000Z,
+    "row": 3934,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-123001",
+    "orderData": 2020-09-02T00:00:00.000Z,
+    "row": 3934,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Bakersfield",
+    "order": null,
+    "orderData": 2020-09-02T00:00:00.000Z,
+    "row": 3934,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-09-02T00:00:00.000Z,
+    "row": 3934,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Philadelphia",
+    "order": "CA-2017-100811",
+    "orderData": 2020-11-21T00:00:00.000Z,
+    "row": 4012,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-100811",
+    "orderData": 2020-11-21T00:00:00.000Z,
+    "row": 4012,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Philadelphia",
+    "order": null,
+    "orderData": 2020-11-21T00:00:00.000Z,
+    "row": 4012,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-21T00:00:00.000Z,
+    "row": 4012,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Lafayette",
+    "order": "CA-2017-124296",
+    "orderData": 2020-12-24T00:00:00.000Z,
+    "row": 4031,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-124296",
+    "orderData": 2020-12-24T00:00:00.000Z,
+    "row": 4031,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Lafayette",
+    "order": null,
+    "orderData": 2020-12-24T00:00:00.000Z,
+    "row": 4031,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-12-24T00:00:00.000Z,
+    "row": 4031,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": "CA-2017-115546",
+    "orderData": 2020-05-14T00:00:00.000Z,
+    "row": 4161,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-115546",
+    "orderData": 2020-05-14T00:00:00.000Z,
+    "row": 4161,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": null,
+    "orderData": 2020-05-14T00:00:00.000Z,
+    "row": 4161,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-05-14T00:00:00.000Z,
+    "row": 4161,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": "CA-2017-120327",
+    "orderData": 2020-11-11T00:00:00.000Z,
+    "row": 4227,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-120327",
+    "orderData": 2020-11-11T00:00:00.000Z,
+    "row": 4227,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-11-11T00:00:00.000Z,
+    "row": 4227,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-11T00:00:00.000Z,
+    "row": 4227,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": "CA-2017-143567",
+    "orderData": 2020-11-02T00:00:00.000Z,
+    "row": 4882,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-143567",
+    "orderData": 2020-11-02T00:00:00.000Z,
+    "row": 4882,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-11-02T00:00:00.000Z,
+    "row": 4882,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-02T00:00:00.000Z,
+    "row": 4882,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Detroit",
+    "order": "CA-2017-145653",
+    "orderData": 2020-09-01T00:00:00.000Z,
+    "row": 5220,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-145653",
+    "orderData": 2020-09-01T00:00:00.000Z,
+    "row": 5220,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Detroit",
+    "order": null,
+    "orderData": 2020-09-01T00:00:00.000Z,
+    "row": 5220,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-09-01T00:00:00.000Z,
+    "row": 5220,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": "CA-2017-147333",
+    "orderData": 2020-12-14T00:00:00.000Z,
+    "row": 5277,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-147333",
+    "orderData": 2020-12-14T00:00:00.000Z,
+    "row": 5277,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-12-14T00:00:00.000Z,
+    "row": 5277,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-12-14T00:00:00.000Z,
+    "row": 5277,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Los Angeles",
+    "order": "CA-2017-145772",
+    "orderData": 2020-06-03T00:00:00.000Z,
+    "row": 6125,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-145772",
+    "orderData": 2020-06-03T00:00:00.000Z,
+    "row": 6125,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Los Angeles",
+    "order": null,
+    "orderData": 2020-06-03T00:00:00.000Z,
+    "row": 6125,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-06-03T00:00:00.000Z,
+    "row": 6125,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Marion",
+    "order": "CA-2017-145660",
+    "orderData": 2020-12-01T00:00:00.000Z,
+    "row": 6205,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-145660",
+    "orderData": 2020-12-01T00:00:00.000Z,
+    "row": 6205,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Marion",
+    "order": null,
+    "orderData": 2020-12-01T00:00:00.000Z,
+    "row": 6205,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-12-01T00:00:00.000Z,
+    "row": 6205,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Oakland",
+    "order": "CA-2017-102379",
+    "orderData": 2020-12-02T00:00:00.000Z,
+    "row": 6272,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-102379",
+    "orderData": 2020-12-02T00:00:00.000Z,
+    "row": 6272,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Oakland",
+    "order": null,
+    "orderData": 2020-12-02T00:00:00.000Z,
+    "row": 6272,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-12-02T00:00:00.000Z,
+    "row": 6272,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Baltimore",
+    "order": "US-2017-133361",
+    "orderData": 2020-05-14T00:00:00.000Z,
+    "row": 6459,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "US-2017-133361",
+    "orderData": 2020-05-14T00:00:00.000Z,
+    "row": 6459,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Baltimore",
+    "order": null,
+    "orderData": 2020-05-14T00:00:00.000Z,
+    "row": 6459,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-05-14T00:00:00.000Z,
+    "row": 6459,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Arlington",
+    "order": "US-2017-124779",
+    "orderData": 2020-09-08T00:00:00.000Z,
+    "row": 6651,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "US-2017-124779",
+    "orderData": 2020-09-08T00:00:00.000Z,
+    "row": 6651,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Arlington",
+    "order": null,
+    "orderData": 2020-09-08T00:00:00.000Z,
+    "row": 6651,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-09-08T00:00:00.000Z,
+    "row": 6651,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Houston",
+    "order": "US-2017-141677",
+    "orderData": 2020-03-26T00:00:00.000Z,
+    "row": 7174,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "US-2017-141677",
+    "orderData": 2020-03-26T00:00:00.000Z,
+    "row": 7174,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Houston",
+    "order": null,
+    "orderData": 2020-03-26T00:00:00.000Z,
+    "row": 7174,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-03-26T00:00:00.000Z,
+    "row": 7174,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": "CA-2017-109183",
+    "orderData": 2020-12-04T00:00:00.000Z,
+    "row": 7293,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-109183",
+    "orderData": 2020-12-04T00:00:00.000Z,
+    "row": 7293,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-12-04T00:00:00.000Z,
+    "row": 7293,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-12-04T00:00:00.000Z,
+    "row": 7293,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": "CA-2017-112172",
+    "orderData": 2020-06-10T00:00:00.000Z,
+    "row": 7310,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-112172",
+    "orderData": 2020-06-10T00:00:00.000Z,
+    "row": 7310,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": null,
+    "orderData": 2020-06-10T00:00:00.000Z,
+    "row": 7310,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-06-10T00:00:00.000Z,
+    "row": 7310,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Philadelphia",
+    "order": "CA-2017-135069",
+    "orderData": 2020-04-10T00:00:00.000Z,
+    "row": 7425,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-135069",
+    "orderData": 2020-04-10T00:00:00.000Z,
+    "row": 7425,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Philadelphia",
+    "order": null,
+    "orderData": 2020-04-10T00:00:00.000Z,
+    "row": 7425,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-04-10T00:00:00.000Z,
+    "row": 7425,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": "CA-2017-151799",
+    "orderData": 2020-12-14T00:00:00.000Z,
+    "row": 7698,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-151799",
+    "orderData": 2020-12-14T00:00:00.000Z,
+    "row": 7698,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-12-14T00:00:00.000Z,
+    "row": 7698,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-12-14T00:00:00.000Z,
+    "row": 7698,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Lakewood",
+    "order": "CA-2017-150091",
+    "orderData": 2020-10-12T00:00:00.000Z,
+    "row": 8425,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-150091",
+    "orderData": 2020-10-12T00:00:00.000Z,
+    "row": 8425,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Lakewood",
+    "order": null,
+    "orderData": 2020-10-12T00:00:00.000Z,
+    "row": 8425,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-10-12T00:00:00.000Z,
+    "row": 8425,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Dallas",
+    "order": "US-2017-119319",
+    "orderData": 2020-11-06T00:00:00.000Z,
+    "row": 8621,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "US-2017-119319",
+    "orderData": 2020-11-06T00:00:00.000Z,
+    "row": 8621,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Dallas",
+    "order": null,
+    "orderData": 2020-11-06T00:00:00.000Z,
+    "row": 8621,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-06T00:00:00.000Z,
+    "row": 8621,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Decatur",
+    "order": "CA-2017-163265",
+    "orderData": 2020-02-16T00:00:00.000Z,
+    "row": 8673,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-163265",
+    "orderData": 2020-02-16T00:00:00.000Z,
+    "row": 8673,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Decatur",
+    "order": null,
+    "orderData": 2020-02-16T00:00:00.000Z,
+    "row": 8673,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-02-16T00:00:00.000Z,
+    "row": 8673,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": "CA-2017-119284",
+    "orderData": 2020-06-15T00:00:00.000Z,
+    "row": 8697,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-119284",
+    "orderData": 2020-06-15T00:00:00.000Z,
+    "row": 8697,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-06-15T00:00:00.000Z,
+    "row": 8697,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-06-15T00:00:00.000Z,
+    "row": 8697,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Morristown",
+    "order": "CA-2017-126928",
+    "orderData": 2020-09-17T00:00:00.000Z,
+    "row": 8878,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-126928",
+    "orderData": 2020-09-17T00:00:00.000Z,
+    "row": 8878,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Morristown",
+    "order": null,
+    "orderData": 2020-09-17T00:00:00.000Z,
+    "row": 8878,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-09-17T00:00:00.000Z,
+    "row": 8878,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": "CA-2017-105620",
+    "orderData": 2020-12-25T00:00:00.000Z,
+    "row": 8958,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-105620",
+    "orderData": 2020-12-25T00:00:00.000Z,
+    "row": 8958,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-12-25T00:00:00.000Z,
+    "row": 8958,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-12-25T00:00:00.000Z,
+    "row": 8958,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": "CA-2017-102925",
+    "orderData": 2020-11-05T00:00:00.000Z,
+    "row": 9473,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-102925",
+    "orderData": 2020-11-05T00:00:00.000Z,
+    "row": 9473,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": null,
+    "orderData": 2020-11-05T00:00:00.000Z,
+    "row": 9473,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-05T00:00:00.000Z,
+    "row": 9473,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": "CA-2017-116127",
+    "orderData": 2020-06-25T00:00:00.000Z,
+    "row": 9584,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-116127",
+    "orderData": 2020-06-25T00:00:00.000Z,
+    "row": 9584,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": null,
+    "orderData": 2020-06-25T00:00:00.000Z,
+    "row": 9584,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-06-25T00:00:00.000Z,
+    "row": 9584,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": "CA-2017-160633",
+    "orderData": 2020-11-16T00:00:00.000Z,
+    "row": 9618,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-160633",
+    "orderData": 2020-11-16T00:00:00.000Z,
+    "row": 9618,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-11-16T00:00:00.000Z,
+    "row": 9618,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-16T00:00:00.000Z,
+    "row": 9618,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Bowling",
+    "order": "CA-2017-160633",
+    "orderData": 2020-11-16T00:00:00.000Z,
+    "row": 9619,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": "CA-2017-160633",
+    "orderData": 2020-11-16T00:00:00.000Z,
+    "row": 9619,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Bowling",
+    "order": null,
+    "orderData": 2020-11-16T00:00:00.000Z,
+    "row": 9619,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-16T00:00:00.000Z,
+    "row": 9619,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Lorain",
+    "order": null,
+    "orderData": 2020-01-01T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-01-01T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Detroit",
+    "order": null,
+    "orderData": 2020-01-23T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-01-23T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Decatur",
+    "order": null,
+    "orderData": 2020-02-16T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-02-16T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": null,
+    "orderData": 2020-03-17T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-03-17T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Houston",
+    "order": null,
+    "orderData": 2020-03-26T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-03-26T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Philadelphia",
+    "order": null,
+    "orderData": 2020-04-10T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-04-10T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-05-13T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-05-13T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Baltimore",
+    "order": null,
+    "orderData": 2020-05-14T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": null,
+    "orderData": 2020-05-14T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "2",
+    "city": null,
+    "order": null,
+    "orderData": 2020-05-14T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Louisville",
+    "order": null,
+    "orderData": 2020-05-27T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-05-27T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Omaha",
+    "order": null,
+    "orderData": 2020-05-29T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-05-29T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Los Angeles",
+    "order": null,
+    "orderData": 2020-06-03T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-06-03T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": null,
+    "orderData": 2020-06-10T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-06-10T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Auburn",
+    "order": null,
+    "orderData": 2020-06-11T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-06-11T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-06-15T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-06-15T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Olympia",
+    "order": null,
+    "orderData": 2020-06-17T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-06-17T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-06-25T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": null,
+    "orderData": 2020-06-25T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "2",
+    "city": null,
+    "order": null,
+    "orderData": 2020-06-25T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Detroit",
+    "order": null,
+    "orderData": 2020-09-01T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-09-01T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Bakersfield",
+    "order": null,
+    "orderData": 2020-09-02T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-09-02T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Arlington",
+    "order": null,
+    "orderData": 2020-09-08T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-09-08T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Morristown",
+    "order": null,
+    "orderData": 2020-09-17T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Provo",
+    "order": null,
+    "orderData": 2020-09-17T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "2",
+    "city": null,
+    "order": null,
+    "orderData": 2020-09-17T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-09-23T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-09-23T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Lakewood",
+    "order": null,
+    "orderData": 2020-10-12T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-10-12T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "2",
+    "city": "San Francisco",
+    "order": null,
+    "orderData": 2020-10-19T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "2",
+    "city": null,
+    "order": null,
+    "orderData": 2020-10-19T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Vancouver",
+    "order": null,
+    "orderData": 2020-10-30T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-10-30T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-11-02T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-02T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "New York City",
+    "order": null,
+    "orderData": 2020-11-05T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-05T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Dallas",
+    "order": null,
+    "orderData": 2020-11-06T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-06T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-11-11T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-11T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Glendale",
+    "order": null,
+    "orderData": 2020-11-12T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-12T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Bowling",
+    "order": null,
+    "orderData": 2020-11-16T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-11-16T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "2",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-16T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Philadelphia",
+    "order": null,
+    "orderData": 2020-11-21T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-21T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-11-28T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-11-28T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Marion",
+    "order": null,
+    "orderData": 2020-12-01T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-12-01T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Oakland",
+    "order": null,
+    "orderData": 2020-12-02T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-12-02T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-12-04T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-12-04T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "2",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-12-14T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "2",
+    "city": null,
+    "order": null,
+    "orderData": 2020-12-14T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Lafayette",
+    "order": null,
+    "orderData": 2020-12-24T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-12-24T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": "Columbus",
+    "order": null,
+    "orderData": 2020-12-25T00:00:00.000Z,
+    "row": null,
+  },
+  Object {
+    "SUM(ECommerce.count)": "1",
+    "city": null,
+    "order": null,
+    "orderData": 2020-12-25T00:00:00.000Z,
+    "row": null,
   },
 ]
 `;
@@ -3446,7 +8102,7 @@ Array [
     "totalSales": 2399.96,
   },
   Object {
-    "productName": "Logitech diNovo Edge Keyboard",
+    "productName": "Logitech di_Novo Edge Keyboard",
     "totalSales": 2249.91,
   },
   Object {
@@ -5616,7 +10272,7 @@ Array [
 
 exports[`Queries with the @cubejs-backend/postgres-driver filtering ECommerce: startsWith + dimensions, third 1`] = `Array []`;
 
-exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: contains + dimentions + order, first 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: contains + dimensions + order, first 1`] = `
 Array [
   Object {
     "Products.category": "Furniture",
@@ -5631,7 +10287,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: contains + dimentions + order, second 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: contains + dimensions + order, second 1`] = `
 Array [
   Object {
     "Products.category": "Furniture",
@@ -5656,9 +10312,9 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: contains + dimentions + order, third 1`] = `Array []`;
+exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: contains + dimensions + order, third 1`] = `Array []`;
 
-exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: endsWith filter + dimentions + order, first 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: endsWith filter + dimensions + order, first 1`] = `
 Array [
   Object {
     "Products.category": "Furniture",
@@ -5707,7 +10363,7 @@ Array [
   },
   Object {
     "Products.category": "Technology",
-    "Products.productName": "Logitech diNovo Edge Keyboard",
+    "Products.productName": "Logitech di_Novo Edge Keyboard",
     "Products.subCategory": "Accessories",
   },
   Object {
@@ -5743,7 +10399,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: endsWith filter + dimentions + order, second 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: endsWith filter + dimensions + order, second 1`] = `
 Array [
   Object {
     "Products.category": "Furniture",
@@ -5802,7 +10458,7 @@ Array [
   },
   Object {
     "Products.category": "Technology",
-    "Products.productName": "Logitech diNovo Edge Keyboard",
+    "Products.productName": "Logitech di_Novo Edge Keyboard",
     "Products.subCategory": "Accessories",
   },
   Object {
@@ -5838,9 +10494,9 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: endsWith filter + dimentions + order, third 1`] = `Array []`;
+exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: endsWith filter + dimensions + order, third 1`] = `Array []`;
 
-exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: startsWith filter + dimentions + order, first 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: startsWith filter + dimensions + order, first 1`] = `
 Array [
   Object {
     "Products.category": "Office Supplies",
@@ -5855,7 +10511,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: startsWith filter + dimentions + order, second 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: startsWith filter + dimensions + order, second 1`] = `
 Array [
   Object {
     "Products.category": "Office Supplies",
@@ -5885,7 +10541,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: startsWith filter + dimentions + order, third 1`] = `Array []`;
+exports[`Queries with the @cubejs-backend/postgres-driver filtering Products: startsWith filter + dimensions + order, third 1`] = `Array []`;
 
 exports[`Queries with the @cubejs-backend/postgres-driver pre-aggregations Customers: running total without time dimension 1`] = `
 Array [
@@ -6102,7 +10758,7 @@ Array [
   Object {
     "BigECommerce.orderDate": "2020-11-01T00:00:00.000",
     "BigECommerce.orderDate.month": "2020-11-01T00:00:00.000",
-    "BigECommerce.productName": "Logitech diNovo Edge Keyboard",
+    "BigECommerce.productName": "Logitech di_Novo Edge Keyboard",
     "BigECommerce.totalQuantity": "9",
   },
   Object {
@@ -7000,7 +11656,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying Customers: dimentions + limit 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying Customers: dimensions + limit 1`] = `
 Array [
   Object {
     "Customers.customerId": "AH-10465",
@@ -7045,7 +11701,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying Customers: dimentions + order + limit + total + offset 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying Customers: dimensions + order + limit + total + offset 1`] = `
 Array [
   Object {
     "Customers.customerId": "GA-14725",
@@ -7090,7 +11746,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying Customers: dimentions + order + limit + total 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying Customers: dimensions + order + limit + total 1`] = `
 Array [
   Object {
     "Customers.customerId": "AH-10465",
@@ -7135,7 +11791,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying Customers: dimentions + order + total + offset 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying Customers: dimensions + order + total + offset 1`] = `
 Array [
   Object {
     "Customers.customerId": "BS-11380",
@@ -7144,7 +11800,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying Customers: dimentions + order 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying Customers: dimensions + order 1`] = `
 Array [
   Object {
     "Customers.customerId": "AH-10465",
@@ -7313,7 +11969,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying Customers: dimentions + total 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying Customers: dimensions + total 1`] = `
 Array [
   Object {
     "Customers.customerId": "AH-10465",
@@ -7916,7 +12572,7 @@ Array [
     "ECommerce.discount": "0.00000",
     "ECommerce.orderDate": "2020-11-02T00:00:00.000",
     "ECommerce.orderId": "CA-2017-143567",
-    "ECommerce.productName": "Logitech diNovo Edge Keyboard",
+    "ECommerce.productName": "Logitech di_Novo Edge Keyboard",
     "ECommerce.profit": "517.47930",
     "ECommerce.quantity": 9,
     "ECommerce.rowId": 4882,
@@ -8256,7 +12912,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying ECommerce: dimentions + limit 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying ECommerce: dimensions + limit 1`] = `
 Array [
   Object {
     "ECommerce.category": "Furniture",
@@ -8411,7 +13067,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying ECommerce: dimentions + order + limit + total + offset 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying ECommerce: dimensions + order + limit + total + offset 1`] = `
 Array [
   Object {
     "ECommerce.category": "Furniture",
@@ -8566,7 +13222,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying ECommerce: dimentions + order + limit + total 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying ECommerce: dimensions + order + limit + total 1`] = `
 Array [
   Object {
     "ECommerce.category": "Furniture",
@@ -8721,7 +13377,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying ECommerce: dimentions + order + total + offset 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying ECommerce: dimensions + order + total + offset 1`] = `
 Array [
   Object {
     "ECommerce.category": "Office Supplies",
@@ -8741,7 +13397,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying ECommerce: dimentions + order 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying ECommerce: dimensions + order 1`] = `
 Array [
   Object {
     "ECommerce.category": "Furniture",
@@ -9066,7 +13722,7 @@ Array [
     "ECommerce.discount": "0.00000",
     "ECommerce.orderDate": "2020-11-02T00:00:00.000",
     "ECommerce.orderId": "CA-2017-143567",
-    "ECommerce.productName": "Logitech diNovo Edge Keyboard",
+    "ECommerce.productName": "Logitech di_Novo Edge Keyboard",
     "ECommerce.profit": "517.47930",
     "ECommerce.quantity": 9,
     "ECommerce.rowId": 4882,
@@ -9406,7 +14062,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying ECommerce: dimentions + total 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying ECommerce: dimensions + total 1`] = `
 Array [
   Object {
     "ECommerce.category": "Furniture",
@@ -9731,7 +14387,7 @@ Array [
     "ECommerce.discount": "0.00000",
     "ECommerce.orderDate": "2020-11-02T00:00:00.000",
     "ECommerce.orderId": "CA-2017-143567",
-    "ECommerce.productName": "Logitech diNovo Edge Keyboard",
+    "ECommerce.productName": "Logitech di_Novo Edge Keyboard",
     "ECommerce.profit": "517.47930",
     "ECommerce.quantity": 9,
     "ECommerce.rowId": 4882,
@@ -10262,7 +14918,7 @@ Array [
   Object {
     "ECommerce.orderDate": "2020-11-01T00:00:00.000",
     "ECommerce.orderDate.month": "2020-11-01T00:00:00.000",
-    "ECommerce.productName": "Logitech diNovo Edge Keyboard",
+    "ECommerce.productName": "Logitech di_Novo Edge Keyboard",
     "ECommerce.totalQuantity": "9",
   },
   Object {
@@ -10435,7 +15091,7 @@ Array [
   Object {
     "ECommerce.orderDate": "2020-01-01T00:00:00.000",
     "ECommerce.orderDate.year": "2020-01-01T00:00:00.000",
-    "ECommerce.productName": "Logitech diNovo Edge Keyboard",
+    "ECommerce.productName": "Logitech di_Novo Edge Keyboard",
     "ECommerce.totalQuantity": "9",
   },
   Object {
@@ -10566,7 +15222,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying Products: dimentions + order + limit + total 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying Products: dimensions + order + limit + total 1`] = `
 Array [
   Object {
     "Products.category": "Furniture",
@@ -10621,7 +15277,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying Products: dimentions + order + limit 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying Products: dimensions + order + limit 1`] = `
 Array [
   Object {
     "Products.category": "Furniture",
@@ -10676,7 +15332,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying Products: dimentions + order + total 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying Products: dimensions + order + total 1`] = `
 Array [
   Object {
     "Products.category": "Furniture",
@@ -10775,7 +15431,7 @@ Array [
   },
   Object {
     "Products.category": "Technology",
-    "Products.productName": "Logitech diNovo Edge Keyboard",
+    "Products.productName": "Logitech di_Novo Edge Keyboard",
     "Products.subCategory": "Accessories",
   },
   Object {
@@ -10821,7 +15477,7 @@ Array [
 ]
 `;
 
-exports[`Queries with the @cubejs-backend/postgres-driver querying Products: dimentions + order 1`] = `
+exports[`Queries with the @cubejs-backend/postgres-driver querying Products: dimensions + order 1`] = `
 Array [
   Object {
     "Products.category": "Furniture",
@@ -10920,7 +15576,7 @@ Array [
   },
   Object {
     "Products.category": "Technology",
-    "Products.productName": "Logitech diNovo Edge Keyboard",
+    "Products.productName": "Logitech di_Novo Edge Keyboard",
     "Products.subCategory": "Accessories",
   },
   Object {

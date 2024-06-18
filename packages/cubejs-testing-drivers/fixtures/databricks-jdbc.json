@@ -160,6 +160,9 @@
 
     "SKIPPED SQL API (Need work)",
     "---------------------------------------",
-    "SQL API: Nested Rollup"
+    "SQL API: Nested Rollup",
+    "SQL API: Nested Rollup with aliases",
+    "SQL API: Nested Rollup over asteriks",
+    "SQL API: Extended nested Rollup over asterisk"
   ]
 }
