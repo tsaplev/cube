@@ -144,7 +144,7 @@ class ApiGateway {
   protected readonly requestLoggerMiddleware: RequestLoggerMiddlewareFn;
 
   protected readonly securityContextExtractor: SecurityContextExtractorFn;
-  
+
   protected readonly contextRejectionMiddleware: ContextRejectionMiddlewareFn;
 
   protected readonly wsContextAcceptor: ContextAcceptorFn;
@@ -226,7 +226,7 @@ class ApiGateway {
         schema = makeSchema(metaConfig);
         compilerApi.setGraphQLSchema(schema);
       }
-      
+
       try {
         const jsonQuery = getJsonQueryFromGraphQLQuery(query, metaConfig, variables);
         res.json({ jsonQuery });
@@ -361,7 +361,7 @@ class ApiGateway {
       userMiddlewares,
       userAsyncHandler(async (req, res) => {
         const server = this.initSQLServer();
-        
+
         res.setHeader('Content-Type', 'application/json');
         res.setHeader('Transfer-Encoding', 'chunked');
 
@@ -1788,6 +1788,10 @@ class ApiGateway {
       const [queryType, normalizedQueries] =
         await this.getNormalizedQueries(query, context, request.streaming);
 
+      // If no "ORDER BY" clause was provided, set order prop to empty array
+      // meaning "DO NOT APPLY DEFAULT ORDER" in BaseQuery processing
+      normalizedQueries.forEach((nQuery) => { nQuery.order = nQuery.order ?? []; });
+
       const compilerApi = await this.getCompilerApi(context);
       let metaConfigResult = await compilerApi.metaConfig({
         requestId: context.requestId
@@ -2014,9 +2018,9 @@ class ApiGateway {
     e, context, query, res, requestStarted
   }: HandleErrorOptions) {
     const requestId = getEnv('devMode') || context?.signedWithPlaygroundAuthSecret ? context?.requestId : undefined;
-    
+
     const plainError = e.plainMessages;
-    
+
     if (e instanceof CubejsHandlerError) {
       this.log({
         type: e.type,
@@ -2342,7 +2346,7 @@ class ApiGateway {
           token,
           error: error.stack || error.toString()
         }, <any>req);
-        
+
         res.status(e.status).json({ error: e.message });
       } else if (e instanceof Error) {
         this.log({
@@ -2366,7 +2370,7 @@ class ApiGateway {
   protected checkAuthSystemMiddleware: RequestHandler = async (req, res, next) => {
     await this.checkAuthWrapper(this.checkAuthSystemFn, req, res, next);
   };
-  
+
   protected requestContextMiddleware: RequestHandler = async (req: Request, res: ExpressResponse, next: NextFunction) => {
     try {
       req.context = await this.contextByReq(req, req.securityContext, getRequestIdFromRequest(req));
