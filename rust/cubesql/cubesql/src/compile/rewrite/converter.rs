@@ -63,6 +63,7 @@ use std::{
     ops::Index,
     sync::Arc,
 };
+use log::{warn};
 
 pub use super::rewriter::CubeRunner;
 
@@ -1985,10 +1986,18 @@ impl LanguageToLogicalPlanConverter {
                         } else {
                             None
                         };
-                        query.order = if query_order.len() > 0 {
+
+                        warn!("query: {:?}", query);
+                        query.order = if !query_order.is_empty() {
                             Some(query_order)
                         } else {
-                            None
+                            Some(vec![])
+                            // // for ungrouped queries we need to return empty array so
+                            // // the processing in BaseQuery.js won't automatically add default order
+                            // match query.ungrouped {
+                            //     Some(true) => Some(vec![]),
+                            //     _ => None,
+                            // }
                         };
                         let cube_scan_query_limit = self
                             .cube_context
