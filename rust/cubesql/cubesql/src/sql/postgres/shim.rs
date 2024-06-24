@@ -23,6 +23,7 @@ use crate::{
     transport::SpanId,
     CubeError,
 };
+use bytes::Buf;
 use futures::{pin_mut, FutureExt, StreamExt};
 use log::{debug, error, trace};
 use pg_srv::{
@@ -37,6 +38,8 @@ use uuid::Uuid;
 
 pub struct AsyncPostgresShim {
     socket: TcpStream,
+    // If empty, this means socket is on a message boundary.
+    partial_write_buf: bytes::BytesMut,
     // Extended query
     cursors: HashMap<String, Cursor>,
     portals: HashMap<String, Portal>,
@@ -225,19 +228,33 @@ impl From<ErrorResponse> for ConnectionError {
 
 impl AsyncPostgresShim {
     pub async fn run_on(
+        shutdown_interruptor: CancellationToken,
         socket: TcpStream,
         session: Arc<Session>,
         logger: Arc<dyn ContextLogger>,
     ) -> Result<(), ConnectionError> {
         let mut shim = Self {
             socket,
+            partial_write_buf: bytes::BytesMut::new(),
             cursors: HashMap::new(),
             portals: HashMap::new(),
             session,
             logger,
         };
 
-        match shim.run().await {
+        let run_result = tokio::select! {
+            _ = shutdown_interruptor.cancelled() => {
+                // Graceful shutdown runs against a timeout, right?
+                // TODO: Check this.
+                shim.socket.write_all(shim.partial_write_buf.chunk()).await?;
+                shim.write(Self::admin_shutdown_error().to_error_response()).await?;
+                shim.socket.shutdown().await?;
+                return Ok(());
+            }
+            res = shim.run() => res,
+        };
+
+        match run_result {
             Err(e) => {
                 if let ConnectionError::Protocol(ProtocolError::IO { source, .. }, _) = &e {
                     if source.kind() == ErrorKind::BrokenPipe
@@ -250,6 +267,7 @@ impl AsyncPostgresShim {
                 } else if let ConnectionError::CompilationError(CompilationError::Fatal(_, _), _) =
                     &e
                 {
+                    assert!(shim.partial_write_buf.is_empty());
                     shim.write(e.to_error_response()).await?;
                     shim.socket.shutdown().await?;
                     return Ok(());
@@ -262,6 +280,16 @@ impl AsyncPostgresShim {
                 return Ok(());
             }
         }
+    }
+
+    fn admin_shutdown_error() -> ConnectionError {
+        ConnectionError::Protocol(
+            ProtocolError::ErrorResponse {
+                source: ErrorResponse::admin_shutdown(),
+                backtrace: Backtrace::disabled(),
+            },
+            None,
+        )
     }
 
     pub async fn run(&mut self) -> Result<(), ConnectionError> {
@@ -536,7 +564,7 @@ impl AsyncPostgresShim {
         &mut self,
         message: Vec<Message>,
     ) -> Result<(), ConnectionError> {
-        buffer::write_messages(&mut self.socket, message).await?;
+        buffer::write_messages(&mut self.partial_write_buf, &mut self.socket, message).await?;
 
         Ok(())
     }
@@ -546,8 +574,12 @@ impl AsyncPostgresShim {
         completion: PortalCompletion,
     ) -> Result<(), ConnectionError> {
         match completion {
-            PortalCompletion::Complete(c) => buffer::write_message(&mut self.socket, c).await?,
-            PortalCompletion::Suspended(s) => buffer::write_message(&mut self.socket, s).await?,
+            PortalCompletion::Complete(c) => {
+                buffer::write_message(&mut self.partial_write_buf, &mut self.socket, c).await?
+            }
+            PortalCompletion::Suspended(s) => {
+                buffer::write_message(&mut self.partial_write_buf, &mut self.socket, s).await?
+            }
         }
 
         Ok(())
@@ -557,8 +589,16 @@ impl AsyncPostgresShim {
         &mut self,
         message: Message,
     ) -> Result<(), ConnectionError> {
-        buffer::write_message(&mut self.socket, message).await?;
+        buffer::write_message(&mut self.partial_write_buf, &mut self.socket, message).await?;
 
+        Ok(())
+    }
+
+    async fn write_raw(
+        &mut self,
+        buf: &[u8],
+    ) -> Result<(), ConnectionError> {
+        self.socket.write_all(buf).await?;
         Ok(())
     }
 
@@ -617,7 +657,8 @@ impl AsyncPostgresShim {
                     startup_message.major, startup_message.minor,
                 ),
             );
-            buffer::write_message(&mut self.socket, error_response).await?;
+            buffer::write_message(&mut self.partial_write_buf, &mut self.socket, error_response)
+                .await?;
             return Ok(StartupState::Denied);
         }
 
@@ -628,7 +669,8 @@ impl AsyncPostgresShim {
                 protocol::ErrorCode::InvalidAuthorizationSpecification,
                 "no PostgreSQL user name specified in startup packet".to_string(),
             );
-            buffer::write_message(&mut self.socket, error_response).await?;
+            buffer::write_message(&mut self.partial_write_buf, &mut self.socket, error_response)
+                .await?;
             return Ok(StartupState::Denied);
         }
 
@@ -675,7 +717,8 @@ impl AsyncPostgresShim {
                 protocol::ErrorCode::InvalidPassword,
                 format!("password authentication failed for user \"{}\"", &user),
             );
-            buffer::write_message(&mut self.socket, error_response).await?;
+            buffer::write_message(&mut self.partial_write_buf, &mut self.socket, error_response)
+                .await?;
 
             return Ok(false);
         }
@@ -875,14 +918,14 @@ impl AsyncPostgresShim {
                             }
 
                             match chunk {
-                                PortalBatch::Rows(writer) if writer.has_data() => buffer::write_direct(&mut self.socket, writer).await?,
+                                PortalBatch::Rows(writer) if writer.has_data() => buffer::write_direct(&mut self.partial_write_buf, &mut self.socket, writer).await?,
                                 PortalBatch::Completion(completion) => {
                                     self.session.state.end_query();
 
                                     // TODO:
                                     match completion {
-                                        PortalCompletion::Complete(c) => buffer::write_message(&mut self.socket, c).await?,
-                                        PortalCompletion::Suspended(s) => buffer::write_message(&mut self.socket, s).await?,
+                                        PortalCompletion::Complete(c) => buffer::write_message(&mut self.partial_write_buf, &mut self.socket, c).await?,
+                                        PortalCompletion::Suspended(s) => buffer::write_message(&mut self.partial_write_buf, &mut self.socket, s).await?,
                                     }
 
                                     return Ok(());
@@ -1609,7 +1652,7 @@ impl AsyncPostgresShim {
                         },
                         PortalBatch::Rows(writer) => {
                             if writer.has_data() {
-                                buffer::write_direct(&mut self.socket, writer).await?
+                                buffer::write_direct(&mut self.partial_write_buf, &mut self.socket, writer).await?
                             }
                         }
                         PortalBatch::Completion(completion) => return self.write_completion(completion).await,
