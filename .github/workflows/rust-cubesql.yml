@@ -21,13 +21,18 @@ jobs:
     name: Check fmt/clippy
 
     steps:
+      - name: install Curl
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install Rust
-        uses: actions-rs/toolchain@v1
+        uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           toolchain: nightly-2023-12-13
-          override: true
+          # override: true # this is by default on
+          rustflags: ""
           components: rustfmt, clippy
       - uses: Swatinem/rust-cache@v2
         with:
@@ -107,13 +112,18 @@ jobs:
       image: cubejs/rust-cross:${{ matrix.target }}-02042024
 
     steps:
+      - name: install Curl
+        run: |
+          apt-get update
+          apt-get install -y curl
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install Rust
-        uses: actions-rs/toolchain@v1
+        uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           toolchain: nightly-2023-12-13
-          override: true
+          # override: true # this is by default on
+          rustflags: ""
           components: rustfmt
           target: ${{ matrix.target }}
       - uses: Swatinem/rust-cache@v2
@@ -133,7 +143,7 @@ jobs:
         id: yarn-cache-dir-path
         run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
       - name: Restore yarn cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
@@ -214,10 +224,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install Rust
-        uses: actions-rs/toolchain@v1
+        uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           toolchain: nightly-2023-12-13
-          override: true
+          # override: true # this is by default on
+          rustflags: ""
           components: rustfmt
           target: ${{ matrix.target }}
       - name: Install Python
@@ -236,7 +247,7 @@ jobs:
         run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
         shell: bash
       - name: Restore yarn cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
@@ -296,10 +307,11 @@ jobs:
         run: rustup set auto-self-update disable
         shell: bash
       - name: Install Rust
-        uses: actions-rs/toolchain@v1
+        uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           toolchain: nightly-2023-12-13
-          override: true
+          # override: true # this is by default on
+          rustflags: ""
           components: rustfmt
       - name: Install Python
         uses: actions/setup-python@v4
@@ -317,7 +329,7 @@ jobs:
         run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
         shell: bash
       - name: Restore yarn cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}

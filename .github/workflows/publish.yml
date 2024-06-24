@@ -16,10 +16,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install Rust
-        uses: actions-rs/toolchain@v1
+        uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           toolchain: nightly-2023-12-13
-          override: true
+          # override: true # this is by default on
+          rustflags: ""
           components: rustfmt
       - name: Install Node.js 18.x
         uses: actions/setup-node@v4
@@ -30,7 +31,7 @@ jobs:
         run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
         shell: bash
       - name: Restore yarn cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
@@ -90,10 +91,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install Rust
-        uses: actions-rs/toolchain@v1
+        uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           toolchain: nightly-2023-12-13
-          override: true
+          # override: true # this is by default on
+          rustflags: ""
           components: rustfmt
           target: ${{ matrix.target }}
       - name: Install Node.js ${{ matrix.node-version }}
@@ -109,7 +111,7 @@ jobs:
         run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
         shell: bash
       - name: Restore yarn cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
@@ -201,10 +203,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install Rust
-        uses: actions-rs/toolchain@v1
+        uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           toolchain: nightly-2023-12-13
-          override: true
+          # override: true # this is by default on
+          rustflags: ""
           components: rustfmt
           target: ${{ matrix.target }}
       - name: Install Python
@@ -221,7 +224,7 @@ jobs:
         run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
         shell: bash
       - name: Restore yarn cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
@@ -297,10 +300,11 @@ jobs:
         run: rustup set auto-self-update disable
         shell: bash
       - name: Install Rust
-        uses: actions-rs/toolchain@v1
+        uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           toolchain: nightly-2023-12-13
-          override: true
+          # override: true # this is by default on
+          rustflags: ""
           components: rustfmt
       - name: Install Python
         uses: actions/setup-python@v4
@@ -316,7 +320,7 @@ jobs:
         run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
         shell: bash
       - name: Restore yarn cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
@@ -413,15 +417,15 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
+        uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@v3
         with:
           version: v0.10.3
       - name: Copy yarn.lock file
         run: cp yarn.lock packages/cubejs-docker
       - name: Push to Docker Hub
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v6
         with:
           context: ./packages/cubejs-docker
           file: ./packages/cubejs-docker/latest.Dockerfile
@@ -490,15 +494,15 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
+        uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@v3
         with:
           version: v0.9.1
       - name: Copy yarn.lock file
         run: cp yarn.lock packages/cubejs-docker
       - name: Push to Docker Hub
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v6
         with:
           context: ./packages/cubejs-docker
           file: ./packages/cubejs-docker/latest-debian-jdk.Dockerfile
@@ -588,18 +592,18 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@v3
         with:
           version: v0.9.1
       - name: Cache Docker layers
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: /tmp/.buildx-cache
           key: ${{ runner.os }}-${{ matrix.target }}-buildx-${{ matrix.tag }}-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-${{ matrix.target }}-buildx-${{ matrix.tag }}-
       - name: Push to Docker Hub
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v6
         with:
           context: ./rust/cubestore/
           file: ./rust/cubestore/Dockerfile
@@ -668,11 +672,12 @@ jobs:
         if: contains(runner.os, 'windows')
         shell: bash
       - name: Setup Rust toolchain
-        uses: actions-rs/toolchain@v1
+        uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           toolchain: nightly-2024-01-29
           target: ${{ matrix.target }}
-          override: true
+          # override: true # this is by default on
+          rustflags: ""
           components: rustfmt
       - uses: Swatinem/rust-cache@v2
         with:
@@ -747,11 +752,12 @@ jobs:
         if: contains(runner.os, 'windows')
         shell: bash
       - name: Setup Rust toolchain
-        uses: actions-rs/toolchain@v1
+        uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           toolchain: nightly-2024-01-29
           target: ${{ matrix.target }}
-          override: true
+          # override: true # this is by default on
+          rustflags: ""
           components: rustfmt
       - uses: Swatinem/rust-cache@v2
         with:
