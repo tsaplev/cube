@@ -1790,7 +1790,8 @@ class ApiGateway {
 
       // If no "ORDER BY" clause was provided, set order prop to empty array
       // meaning "DO NOT APPLY DEFAULT ORDER" in BaseQuery processing
-      normalizedQueries.forEach((nQuery) => { nQuery.order = nQuery.order ?? []; });
+      // XXX: do not forget remove :)
+      // normalizedQueries.forEach((nQuery) => { nQuery.order = nQuery.order ?? []; });
 
       const compilerApi = await this.getCompilerApi(context);
       let metaConfigResult = await compilerApi.metaConfig({
