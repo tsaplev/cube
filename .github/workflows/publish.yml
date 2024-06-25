@@ -42,7 +42,7 @@ jobs:
       - name: Copy yarn.lock file
         run: cp yarn.lock packages/cubejs-docker
       - name: Yarn install
-        uses: nick-invision/retry@v3
+        uses: nick-fields/retry@v3
         env:
           CUBESTORE_SKIP_POST_INSTALL: true
         with:
@@ -120,7 +120,7 @@ jobs:
       - name: Copy yarn.lock file
         run: cp yarn.lock packages/cubejs-docker
       - name: Yarn install
-        uses: nick-invision/retry@v3
+        uses: nick-fields/retry@v3
         env:
           CUBESTORE_SKIP_POST_INSTALL: true
         with:
@@ -235,7 +235,7 @@ jobs:
       - name: Copy yarn.lock file
         run: cp yarn.lock packages/cubejs-docker
       - name: Yarn install
-        uses: nick-invision/retry@v3
+        uses: nick-fields/retry@v3
         env:
           CUBESTORE_SKIP_POST_INSTALL: true
         with:
@@ -331,7 +331,7 @@ jobs:
       - name: Copy yarn.lock file
         run: cp yarn.lock packages/cubejs-docker
       - name: Yarn install
-        uses: nick-invision/retry@v3
+        uses: nick-fields/retry@v3
         env:
           CUBESTORE_SKIP_POST_INSTALL: true
         with:
